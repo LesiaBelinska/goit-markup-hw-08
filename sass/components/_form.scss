@@ -1,0 +1,114 @@
+.form {
+  width: 448px;
+}
+
+.form__label {
+  display: block;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--secondary-text-color);
+}
+
+.form-input {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-input__form-field {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 11px 16px 11px 42px;
+  transition: border-color var(--animation);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.form-input__form-field:focus + .form-input__icon {
+  fill: var(--accent-color);
+}
+
+.form-input__icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  fill: var(--main-text-color);
+  transition: fill var(--animation);
+}
+
+.form__label_message {
+  resize: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--placeholder-color);
+  }
+}
+
+.button-submit {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.checkbox__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox__icon {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--main-text-color);
+  border-radius: 2px;
+  transition: border-color var(--animation), background-color var(--animation),
+    background-image var(--animation);
+}
+
+.checkbox__input:checked + .checkbox__icon {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/icons/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+}
+
+.checkbox__label {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+.checkbox__link {
+  color: var(--accent-color);
+}
