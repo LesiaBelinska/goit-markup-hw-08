@@ -1,17 +1,45 @@
 .filter-portfolio {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
-  justify-content: center;
-  align-items: center;
-  margin-right: -8px;
+  //justify-content: center;
+  // align-items: center;
+  //margin-right: -8px;
+}
 
-  .filter-portfolio__item:not(:last-child) {
-    margin-right: 8px;
+.filter-portfolio__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter-portfolio {
+    justify-content: start;
+  }
+
+  .filter-portfolio__item {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .filter-portfolio {
+    justify-content: center;
+  }
+  .filter-portfolio__item {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter-portfolio {
+    justify-content: center;
+  }
+  .filter-portfolio__item {
+    margin-bottom: 50px;
   }
 }
 
 .filter-portfolio__buttons {
+  display: block;
   padding: 6px 22px;
   border: 0;
   border-radius: 4px;
