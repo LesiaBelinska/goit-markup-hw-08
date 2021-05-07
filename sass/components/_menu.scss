@@ -2,6 +2,12 @@
   display: inline-flex;
 }
 
+@media screen and (max-width: 767px) {
+  .menu--desktop {
+    display: none;
+  }
+}
+
 .menu__item:not(:last-child) {
   margin-right: 50px;
 }

@@ -5,6 +5,12 @@
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .contacts {
+    display: none;
+  }
+}
+
 .contacts__item {
   justify-content: flex-end;
 }
