@@ -1,5 +1,5 @@
 .form {
-  width: 448px;
+  max-width: 100%;
 }
 
 .form__label {
@@ -107,8 +107,20 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+
+  @media screen and (max-width: 767px) {
+    font-size: 11.5px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
 }
 
 .checkbox__link {
   color: var(--accent-color);
+
+  @media screen and (max-width: 767px) {
+    font-size: 11.5px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
 }

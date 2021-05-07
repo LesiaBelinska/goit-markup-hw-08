@@ -17,13 +17,14 @@
 
 <body>
     <!--Шапка сайта-->
-   <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="navigation">
-                <a class="link logo header__logo" href="./"><span class="header__logo_accent">Web</span><span>Studio</span></a>
-                <ul class="list menu">
-                    <li class="menu__item"><a class="link menu__link" href="./index.html">Студия</a></li>
-                    <li class="menu__item"><a class="link menu__link menu__link_current" href="./portfolio.html">Портфолио</a></li>
+                <a class="link logo header__logo" href="./"><span
+                        class="header__logo_accent">Web</span><span>Studio</span></a>
+                <ul class="list menu menu--desktop">
+                    <li class="menu__item"><a class="link menu__link menu__link_current" href="./index.html">Студия</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu__item"><a class="link menu__link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -43,8 +44,49 @@
                         +38 096 111 11 11</a>
                 </li>
             </ul>
+            <button class="mobile-menu-button" data-menu-button>
+                <svg class="mobile-menu-icon" width="40" height="40">
+                    <use class="icon icon-mobile-menu" href="./images/sprite.svg#icon-mobile-menu"></use>
+                    <use class="icon icon-close-mobile-menu" href="./images/sprite.svg#icon-close-mobile-menu"></use>
+                </svg>
+            </button>
         </div>
     </header>
+    <!--Мобильное  меню-->
+    <div class="mobile-menu" data-menu>
+        <ul class="list mobile-menu__list">
+            <li class="mobile-menu__item"><a class="link mobile-menu__link"
+                    href="./index.html">Студия</a></li>
+            <li class="mobile-menu__item"><a class="link mobile-menu__link mobile-menu__link_current" href="./portfolio.html">Портфолио</a></li>
+            <li class="mobile-menu__item"><a class="link mobile-menu__link" href="">Контакты</a></li>
+        </ul>
+        <div class="mobile-menu-bottom">
+            <ul class="list mobile-contacts__list">
+                <li class="mobile-contacts__item">
+                    <a class="link mobile-contacts__link mobile-contacts__link_phone" href="tel:+380961111111">
+                        +38 096 111 11 11</a>
+                </li>
+                <li class="mobile-contacts__item">
+                    <a class="link mobile-contacts__link mobile-contacts__link_mail" href="mailto:info@devstudio.com">
+                        info@devstudio.com</a>
+                </li>
+            </ul>
+            <ul class="list mobile-social__list">
+                <li class="mobile-social__item">
+                    <a class="link mobile-social__link" href="">Instagram</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="link mobile-social__link" href="">Twitter</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="link mobile-social__link" href="">Facebook</a>
+                </li>
+                <li class="mobile-social__item">
+                    <a class="link mobile-social__link" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <main>
     <!--Фильтр Портфолио-->
     <section class="section">

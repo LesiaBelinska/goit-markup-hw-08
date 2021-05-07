@@ -447,6 +447,24 @@ img {
   right: 0;
 }
 
+@media screen and (max-width: 400px) {
+  .mobile-menu {
+    height: 90vh;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mobile-menu {
+    height: 80vh;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile-menu {
+    height: 70vh;
+  }
+}
+
 .icon-close-mobile-menu {
   display: none;
 }
@@ -499,6 +517,27 @@ img {
   color: var(--accent-color);
 }
 
+@media screen and (max-width: 400px) {
+  .mobile-menu__link {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mobile-menu__link {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile-menu__link {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
+
 .mobile-menu__item {
   margin-bottom: 32px;
 }
@@ -517,6 +556,24 @@ img {
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 400px) {
+  .mobile-contacts__link_phone {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mobile-contacts__link_phone {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile-contacts__link_phone {
+    font-size: 20px;
+  }
+}
+
 .mobile-contacts__link_mail {
   display: block;
   font-weight: 500;
@@ -527,6 +584,24 @@ img {
   margin-bottom: 64px;
 }
 
+@media screen and (max-width: 400px) {
+  .mobile-contacts__link_mail {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mobile-contacts__link_mail {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile-contacts__link_mail {
+    font-size: 10px;
+  }
+}
+
 .mobile-social__link {
   display: inline-block;
   font-weight: 500;
@@ -534,6 +609,24 @@ img {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 400px) {
+  .mobile-social__link {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .mobile-social__link {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .mobile-social__link {
+    font-size: 8px;
+  }
 }
 
 .mobile-social__list {
@@ -555,11 +648,12 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 200;
   top: 0;
   left: 0;
   background-color: var(--backdrop-color);
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   opacity: 1;
   transition: opacity var(--animation);
 }
@@ -589,13 +683,26 @@ img {
   transition: transform var(--animation);
 }
 
-.modal .modal__title {
+@media screen and (max-width: 1199px) {
+  .modal {
+    width: 90vw;
+    height: 620px;
+  }
+}
+
+.modal__title {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal__title {
+    line-height: 1.5;
+  }
 }
 
 .button-close {
@@ -618,7 +725,7 @@ img {
 }
 
 .form {
-  width: 448px;
+  max-width: 100%;
 }
 
 .form__label {
@@ -727,8 +834,24 @@ img {
   color: var(--secondary-text-color);
 }
 
+@media screen and (max-width: 767px) {
+  .checkbox__label {
+    font-size: 11.5px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
+}
+
 .checkbox__link {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .checkbox__link {
+    font-size: 11.5px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+  }
 }
 
 .navigation {
@@ -1301,19 +1424,6 @@ img {
   background-color: var(--accent-color);
 }
 
-.footer__grid_colocation {
-  display: flex;
-  justify-content: space-between;
-}
-
-.footer__grid_element {
-  flex-basis: calc((50% - 45px) / 2);
-}
-
-.footer__grid_element:last-child {
-  flex-basis: calc(50% - 10px);
-}
-
 .footer__subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -1330,5 +1440,19 @@ img {
   right: 28px;
   transform: translateY(-50%);
   fill: var(--title-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__grid_colocation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer__grid_element {
+    flex-basis: calc((50% - 45px) / 2);
+  }
+  .footer__grid_element:last-child {
+    flex-basis: calc(50% - 10px);
+  }
 }
 /*# sourceMappingURL=main.css.map */

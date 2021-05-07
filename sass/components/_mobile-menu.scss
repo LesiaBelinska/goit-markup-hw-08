@@ -19,6 +19,18 @@
   &.is-open {
     right: 0;
   }
+
+  @media screen and (max-width: 400px) {
+    height: 90vh;
+  }
+
+  @media screen and (max-width: 350px) {
+    height: 80vh;
+  }
+
+  @media screen and (max-width: 300px) {
+    height: 70vh;
+  }
 }
 
 .icon-close-mobile-menu {
@@ -72,6 +84,21 @@
   &:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (max-width: 400px) {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
 }
 
 .mobile-menu__item {
@@ -90,6 +117,18 @@
   letter-spacing: 0.02em;
   color: var(--accent-color);
   margin-bottom: 32px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 25px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 20px;
+  }
 }
 
 .mobile-contacts__link_mail {
@@ -100,6 +139,18 @@
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
   margin-bottom: 64px;
+
+  @media screen and (max-width: 400px) {
+    font-size: 20px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 10px;
+  }
 }
 
 .mobile-social__link {
@@ -109,6 +160,18 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+
+  @media screen and (max-width: 400px) {
+    font-size: 15px;
+  }
+
+  @media screen and (max-width: 350px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 300px) {
+    font-size: 8px;
+  }
 }
 
 .mobile-social__list {
