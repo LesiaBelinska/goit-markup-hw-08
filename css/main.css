@@ -480,7 +480,6 @@ img {
 }
 
 .mobile-menu__link {
-  display: block;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -493,12 +492,13 @@ img {
   color: var(--accent-color);
 }
 
-.mobile-menu__link_current {
-  color: var(--accent-color);
+.mobile-menu__item {
+  display: block;
+  margin-bottom: 32px;
 }
 
-.mobile-menu__link:not(:last-child) {
-  margin-bottom: 32px;
+.mobile-menu__link_current {
+  color: var(--accent-color);
 }
 
 .mobile-contacts__link_phone {
@@ -518,6 +518,15 @@ img {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
+}
+
+.mobile-cocial__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }
 
 .backdrop {
