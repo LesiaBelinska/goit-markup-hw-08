@@ -56,8 +56,6 @@
 }
 
 .mobile-menu__link {
-  display: flex;
-  align-items: flex-start;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -71,17 +69,13 @@
   }
 }
 
-.mobile-menu__link_current {
-  color: var(--accent-color);
-}
-
-.mobile-menu__link:not(:last-child) {
+.mobile-menu__item {
+  display: block;
   margin-bottom: 32px;
 }
 
-.mobile-contacts__list {
-  display: flex;
-  align-items: flex-end;
+.mobile-menu__link_current {
+  color: var(--accent-color);
 }
 
 .mobile-contacts__link_phone {
@@ -101,5 +95,13 @@
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-bottom: 64px;
+}
+
+.mobile-cocial__link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
 }

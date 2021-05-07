@@ -481,7 +481,6 @@ img {
 
 .mobile-menu__link {
   display: block;
-  align-items: flex-start;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.17;
@@ -502,10 +501,6 @@ img {
   margin-bottom: 32px;
 }
 
-.mobile-contacts__list {
-  align-items: flex-end;
-}
-
 .mobile-contacts__link_phone {
   display: block;
   font-weight: 500;
@@ -523,7 +518,6 @@ img {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-bottom: 64px;
 }
 
 .backdrop {
