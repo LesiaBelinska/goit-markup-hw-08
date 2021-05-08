@@ -23,8 +23,8 @@
                 <a class="link logo header__logo" href="./"><span
                         class="header__logo_accent">Web</span><span>Studio</span></a>
                 <ul class="list menu menu--desktop">
-                    <li class="menu__item"><a class="link menu__link menu__link_current" href="./index.html">Студия</a></li>
-                    <li class="menu__item"><a class="link menu__link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="menu__item"><a class="link menu__link" href="./index.html">Студия</a></li>
+                    <li class="menu__item"><a class="link menu__link menu__link_current" href="./portfolio.html">Портфолио</a></li>
                     <li class="menu__item"><a class="link menu__link" href="">Контакты</a></li>
                 </ul>
             </nav>
@@ -112,7 +112,7 @@
                                 платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
                     </div>
-                <div class="bottom-box">
+                <div class="bottom-box bottom-box_additional">
                 <h2 class="portfolio__subtitle">Технокряк</h2>
                 <p class="portfolio__description">Веб-сайт</p>
                 </div>
@@ -243,10 +243,11 @@
     </section>
         
     </main>
-    <!--Футер-->
-    <!-- <footer class="footer dark-bg">
-        <div class="container footer__grid_colocation">
-            <h2 class="visually-hidden">Контакты Футер</h2>
+<!--Футер-->
+<footer class="footer dark-bg">
+    <div class="container footer__grid_colocation">
+        <h2 class="visually-hidden">Контакты Футер</h2>
+        <div class="footer__contact-us">
             <div class="footer__grid_element footer__contacts">
                 <a class="link logo footer__logo" href="./"><span class="footer__logo_accent">Web</span><span
                         class="footer__logo_studio">Studio</span></a>
@@ -258,12 +259,13 @@
                         </li>
                         <li class="footer__item"><a class="link footer__address_mail-phone"
                                 href="mailto:info@example.com">info@example.com</a></li>
-                        <li class="footer__item"><a class="link footer__address_mail-phone" href="tel:+380991111111">+38 099
-                                111 11 11</a></li>
+                        <li class="footer__item"><a class="link footer__address_mail-phone" href="tel:+380991111111">+38
+                                099 111 11
+                                11</a></li>
                     </ul>
                 </address>
             </div>
-            <div class="footer__grid_element">
+            <div class="footer__grid_element footer-social">
                 <h3 class="footer__subtitle">присоединяйтесь</h3>
                 <ul class="list footer-icons">
                     <li class="footer-icons__item">
@@ -296,22 +298,23 @@
                     </li>
                 </ul>
             </div>
-            <div class="footer__grid_element">
-                <h3 class="footer__subtitle">подпишитесь на рассылку</h3>
-                <form class="subscription-forma" autocomplete="off">
-                    <label class="subscription-forma__label">
-                        <input class="subscription-forma__input" type="email" name="subscription" placeholder="E-mail"
-                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
-                    </label>
-                    <button class="button subscription-forma__button" type="submit">Подписаться
-                        <svg class="icon icon-send" width="24px" height="24px">
-                            <use href="./images/sprite.svg#icon-send"></use>
-                        </svg>
-                    </button>
-                </form>
-            </div>
         </div>
-    </footer> -->
+        <div class="footer__grid_element footer-subscription">
+            <h3 class="footer__subtitle">подпишитесь на рассылку</h3>
+            <form class="subscription-forma" autocomplete="off">
+                <label class="subscription-forma__label">
+                    <input class="subscription-forma__input" type="email" name="subscription" placeholder="E-mail"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                </label>
+                <button class="button subscription-forma__button" type="submit">Подписаться
+                    <svg class="icon icon-send" width="24px" height="24px">
+                        <use href="./images/sprite.svg#icon-send"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+</footer>
     <script src="./js/mobile-menu.js"></script>
     </body>
     
