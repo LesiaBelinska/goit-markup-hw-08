@@ -90,7 +90,8 @@
   }
   .footer__contact-us {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
   }
   .subscription-forma__label {
     display: flex;
@@ -114,5 +115,6 @@
 
   .footer-subscription {
     flex-basis: calc(50% - 10px);
+    text-align: left;
   }
 }
