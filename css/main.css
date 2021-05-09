@@ -1622,11 +1622,15 @@ img {
   .footer__grid_colocation {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
   }
-  .footer__grid_element {
-    flex-basis: calc((50% - 45px) / 2);
+  .footer__contact-us {
+    display: flex;
+    align-items: baseline;
+    width: 50%;
+    justify-content: space-around;
   }
-  .footer__grid_element:last-child {
+  .footer-subscription {
     flex-basis: calc(50% - 10px);
   }
 }
