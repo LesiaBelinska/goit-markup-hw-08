@@ -10,16 +10,16 @@
   }
 }
 
+.contacts__item {
+  justify-content: flex-end;
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    align-items: flex-start;
   }
-}
-
-.contacts__item {
-  justify-content: flex-end;
 }
 
 .contacts__item:not(:last-child) {
@@ -55,10 +55,12 @@
 }
 
 .contacts__icon {
+  display: block;
   fill: currentColor;
   margin-right: 10px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: 8px;
+    margin-left: 0;
   }
 }
