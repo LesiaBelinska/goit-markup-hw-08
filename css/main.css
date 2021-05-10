@@ -755,7 +755,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     height: 581px;
   }
 }
@@ -866,6 +866,13 @@ img {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .checkbox {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
 .checkbox__input {
   position: absolute;
   width: 1px;
@@ -890,6 +897,13 @@ img {
   transition: border-color var(--animation), background-color var(--animation), background-image var(--animation);
 }
 
+@media screen and (max-width: 1199px) {
+  .checkbox__icon {
+    top: 50%;
+    left: 0;
+  }
+}
+
 .checkbox__input:checked + .checkbox__icon {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
@@ -899,12 +913,13 @@ img {
 }
 
 .checkbox__label {
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .checkbox__label {
     font-size: 11.5px;
     line-height: 1.16;
@@ -916,7 +931,7 @@ img {
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1199px) {
   .checkbox__link {
     font-size: 11.5px;
     line-height: 1.16;
